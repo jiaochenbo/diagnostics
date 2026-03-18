@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚠️ 安全测试提醒</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 2px solid #e74c3c;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(231, 76, 60, 0.3);
+    }
+
+    .icon {
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #e74c3c;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #f39c12;
+      margin-bottom: 24px;
+      font-weight: bold;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 24px 0;
+    }
+
+    .info {
+      font-size: 15px;
+      color: #aaa;
+      line-height: 1.8;
+    }
+
+    .info strong {
+      color: #f0f0f0;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 20px;
+      background: #2ecc71;
+      color: #000;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .tips {
+      margin-top: 28px;
+      background: #111;
+      border-left: 4px solid #f39c12;
+      border-radius: 4px;
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.9;
+    }
+
+    .tips li {
+      margin-left: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <div class="icon" aria-hidden="true">🎣</div>
+    <h1>你已被"钓鱼"成功！</h1>
+    <p class="subtitle">这是一个网络安全意识测试页面</p>
+
+    <hr class="divider" />
+
+    <p class="info">
+      你点击了一个<strong>模拟钓鱼链接</strong>，并成功访问了本页面。<br />
+      这意味着在真实攻击场景中，你可能面临账号泄露、数据窃取等风险。
+    </p>
+
+    <div class="tips">
+      <strong>🛡️ 如何防范钓鱼攻击：</strong>
+      <ul>
+        <li>点击链接前，仔细核对发件人和域名</li>
+        <li>不要在陌生页面输入账号密码</li>
+        <li>对"紧急通知"类邮件保持警惕</li>
+        <li>开启多因素认证（MFA）</li>
+        <li>遇到可疑链接，及时上报安全团队</li>
+      </ul>
+    </div>
+
+    <div class="badge">✅ 本次测试不会收集任何真实数据，仅用于安全意识培训</div>
+  </div>
+</body>
+</html>
